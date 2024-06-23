@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.chart-container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1100px;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.chart-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  padding: 20px;
+  max-height: 400px; /* Adjust the max-height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#jobChart,
+#totalJobChart,
+#applicantMonthChart,
+#applicantDailyChart {
+  width: 100%;
+  box-sizing: border-box;
+  max-height: 100%; /* Ensure charts don't exceed their container height */
+}
+
+.chart-container p,
+.chart-label {
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
